@@ -50,11 +50,11 @@ public class OI {
         logitechGamepad = new Joystick(0);
         
         b = new JoystickButton(logitechGamepad, 1);
-        b.whileHeld(new AutoPlace());
+        b.whenPressed(new AutoPlace());
         x = new JoystickButton(logitechGamepad, 1);
-        x.whileHeld(new AutoPickup());
+        x.whenPressed(new AutoPickup());
         rB = new JoystickButton(logitechGamepad, 1);
-        rB.whileHeld(new ClawClose());
+        rB.whenPressed(new ClawClose());
         lB = new JoystickButton(logitechGamepad, 1);
         lB.whenPressed(new ClawOpen());
 
